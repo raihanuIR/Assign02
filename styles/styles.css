@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+}
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
+/* header design */
+
+
+.nav-bar{
+    background-color: #1A0B2E ;
+    padding: 0 200px;
+    border-bottom: 1px solid #412567;
+    /* max-width: 1600px;
+    margin: 0 auto; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-bar img{
+    height: 2rem;
+}
+.nav-items{
+    display: flex;
+    justify-content: center;
+    color:#FFFFFF ;
+    text-decoration: none;
+    gap: 2rem;
+    list-style: none;
+    margin: 2rem auto;
+}
+
+.btn-one{
+    padding: 16px 12px;
+    gap: 4px;
+    border-radius: 999px ;
+    background: linear-gradient(45deg, #F7E93F, #FB09B4, #9100F8);
+    font-size: 1rem;
+    font-weight:600 ;
+    color: #FFFFFF;
+    border: none;
+}
+
+/* Banner design */
+
+main, .nav-bar{
+    max-width: 1600px;
+    /* width: 100%; */
+    margin: 0 auto;
+}
+.banner{
+    padding: 100px 525px;
+    background-image: url(../assets/hero-bg.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    
+}
+.banner-container{
+    max-width: 550px; 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.banner-img{
+    position: relative;
+}
+.circle {
+    max-width: 350px;
+    max-height: 350px;
+    position: relative;
+}
+.mic {
+    max-width: 116px;
+    max-height: 175px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.banner-description{
+    margin-top: 40px;
+}
+
+.banner-heading{
+    font-weight: 800;
+    font-size: 3.75rem;
+    color: #FFFFFF;
+}
+
+.banner-p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-top: 8px;
+}
+.banner-buttons{
+    display: flex;
+    gap: 8px;
+    margin-top: 24px;
+    justify-content: center;
+}
+.btn-two{
+    padding: 12px 20px;
+    gap: 8px;
+    border-radius: 999px ;
+    background: linear-gradient(45deg, #F7E93F, #FB09B4, #9100F8);
+    font-size: 1rem;
+    font-weight:600 ;
+    color: #FFFFFF;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+.btn-three{
+    padding: 12px 20px;
+    gap: 8px;
+    border-radius: 999px ;
+    background: transparent;
+    font-size: 1rem;
+    font-weight:600 ;
+    color: #FFFFFF;
+    border: none;
+    display: flex;
+    align-items: center;
+    color:#00FF88 ;
+    border: 1px solid #00FF88;
+}
+
+/* podcast section */
+
+.podcast{
+    background-color: #1A0B2E;
+    display: flex;
+    flex-direction: column;
+    padding: 0 200px
+}
+
+.pordcast-description{
+    margin-top: 50px;
+}
+
+.podcast-heading{
+    font-size: 3rem;
+    font-weight: 700;
+    color:#FFFFFF;
+    text-align: center;
+}
+
+.podcast-text{
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 30px;
+    opacity: 80%;
+    color:#FFFFFF;
+    text-align: center;
+}
+
+.card-podcast{
+    margin-top: 10rem;
+    margin-bottom: 7.5rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:80px;
+    justify-items: center;
+}
+
+.podcast-cards h2{
+    font-size: 3rem;
+    font-weight: 900;
+    color: #00FF88;
+}
+
+.podcast-cards p{
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+/* tech wave podcast */
+.techwave{
+    padding: 7.5rem 12.5rem;
+    background-color: #230E3D;
+}
+.techwave-heading{
+    font-size: 3rem;
+    font-weight: 700;
+    color:#FFFFFF;
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+.techwave-card-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap:30px;
+    /* align-items: center; */
+}
+
+.techwave-card{
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    background-color: rgba(53, 17, 101, 0.4);
+    border-radius: 40px ;
+}
+
+.card-icon{
+    width: 5rem;
+    height: 5rem;
+    /* margin-bottom: 16px; */
+}
+
+.techwave-card-head{
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.techwave-card-text{
+    font-size: 1rem ;
+    font-weight: 400;
+    line-height: 1.5rem;
+    opacity: 60%;
+    color: #FFFFFF;
+    margin-top: 1rem;
+}
+
+.grid-colspan-2{
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.grid-rowspan-2{
+    grid-column: span 1;
+    grid-row: span 2;
+}
+.grid-normal{
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+/* featured episodes  */
+
+.featured{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+

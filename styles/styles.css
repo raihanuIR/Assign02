@@ -453,11 +453,6 @@ footer{
 }
 
 
-
-
-
-
-
 /* responsive code styles */
 
 
@@ -615,22 +610,29 @@ nav{
     margin-bottom: 1rem;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.ff{
+    padding: 40px 20px;
 }
 
+.footer-container{
+    gap: 1.5rem;
+}
+.footer-img{
+    width: 219px;
+    height: 32px;
+}
+.footer-links{
+    gap: 1rem;
+    width: 255px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
+.copyright{
+    line-height: 1.5rem;
+}
+
+}
 
 
 

@@ -56,7 +56,17 @@ main, .nav-bar{
     background-repeat: no-repeat;
     background-position: center;
     margin: 0 auto;
+    max-width: 1600px;
     
+}
+footer{
+    padding: 120px;
+    background-image: url(../assets/footer-bg.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    max-width: 1600px;
 }
 .banner-container{
     max-width: 550px; 
@@ -368,3 +378,53 @@ iframe{
     /* width: 1.25rem; */
     object-fit: contain;
 }
+
+/* footer design */
+
+footer{
+    padding: 120px;
+    background-image: url(../assets/footer-bg.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    max-width: 1600px;
+}
+
+.footer-container{
+    max-width: 1360px;
+    gap:2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.footer-img{
+    max-width: 410px;
+    max-height: 60px;
+}
+.footer-links{
+    display: flex;
+    gap: 2.5rem;
+    max-width: 544px;
+}
+.footer-link{
+    display: flex;
+    gap:.5rem;
+}
+.footer-link-text{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #FFFFFF;
+    opacity: 60%;
+}
+.copyright{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #FFFFFF;
+    opacity: 60%;
+}
+
+
+

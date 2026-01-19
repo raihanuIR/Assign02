@@ -1,5 +1,6 @@
 *{
     margin: 0;
+    padding: 0;
 }
 .inter-font {
   font-family: "Inter", sans-serif;
@@ -7,13 +8,15 @@
 }
 /* header design */
 
+header{
+    max-width: 1600px;
+    margin: 0 auto;
+}
 
 .nav-bar{
     background-color: #1A0B2E ;
     padding: 0 200px;
     border-bottom: 1px solid #412567;
-    /* max-width: 1600px;
-    margin: 0 auto; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -49,6 +52,7 @@ main, .nav-bar{
     /* width: 100%; */
     margin: 0 auto;
 }
+
 .banner{
     padding: 100px 525px;
     background-image: url(../assets/hero-bg.png);
@@ -56,18 +60,10 @@ main, .nav-bar{
     background-repeat: no-repeat;
     background-position: center;
     margin: 0 auto;
-    max-width: 1600px;
-    
+    /* max-height: auto; */
+    /* max-height:760px; */
 }
-footer{
-    padding: 120px;
-    background-image: url(../assets/footer-bg.png);
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 0 auto;
-    max-width: 1600px;
-}
+
 .banner-container{
     max-width: 550px; 
     display: flex;
@@ -90,6 +86,18 @@ footer{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+.banner-new{
+    font-size: 18px;
+    font-weight: 600;
+    padding: 8px 16px;
+    background-color: #00FF88;
+    max-width: 43px;
+    border-radius: 999px;
+    position: absolute;
+    top: 12px;
+    right: 23px;
+    
 }
 .banner-description{
     margin-top: 40px;
@@ -262,12 +270,17 @@ footer{
 
 /* featured episodes  */
 
-.featured{
+.featured-host{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 7.5rem 12.5rem;
     background-color: #1A0B2E;
+}
+.featured-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .featured-heading{
     font-size: 3rem;
@@ -343,6 +356,11 @@ iframe{
     align-items: center;
     border-radius: 2.5rem;
 }
+.host-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .host-info{
     display: flex;
     flex-direction: column;
@@ -382,15 +400,19 @@ iframe{
 /* footer design */
 
 footer{
-    padding: 120px;
+    margin: 0 auto;
+    max-width: 1600px;
+}
+.ff{
     background-image: url(../assets/footer-bg.png);
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
     margin: 0 auto;
-    max-width: 1600px;
+    padding: 120px;
+    display: flex;
+    justify-content: center;
 }
-
 .footer-container{
     max-width: 1360px;
     gap:2rem;
@@ -425,6 +447,195 @@ footer{
     color: #FFFFFF;
     opacity: 60%;
 }
+
+.hamburger{
+    display: none;
+}
+
+
+
+
+
+
+
+/* responsive code styles */
+
+
+@media screen and (max-width:576px){
+
+
+nav{
+    display: none;
+}
+.nav-bar{
+    background-color: #1A0B2E;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+.btn-one{
+    display: none;
+}
+.hamburger{
+    display: block;
+}
+.hamburger img{
+    width: 18px;
+    height: 14px;
+}
+
+.banner{
+    padding: 60px 20px ;
+    /* max-height:466px; */
+    /* max-width: 576px; */
+    /* background-size: 150%; */
+    /* padding: 100px 525px; */
+    /* background-image: url(../assets/Image.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto; */
+    /* max-height: auto; */
+    /* max-height:px; */
+
+}
+.banner-container{
+    margin: 0 auto;
+    max-width: 524px; 
+}
+.circle {
+    width: 300px;
+    height: 300px;
+}
+.mic {
+    width: 77px;
+    height: 120px; 
+}
+.banner-description{
+    max-width: 400px;
+}
+.pordcast-description{
+    margin-top: 40px;
+}
+.podcast{
+    padding: 0 20px;
+}
+
+.podcast-heading{
+    font-size: 2rem;
+}
+.podcast-text{
+    line-height: auto;
+}
+
+.card-podcast{
+    margin-top: 5rem;
+    margin-bottom: 7.5rem;
+    grid-template-columns: repeat(2,1fr);
+    gap:40px;
+    
+}
+.podcast-cards h2{
+    font-size: 2.5rem;
+}
+.techwave{
+    padding: 2.5rem 1.25rem;
+}
+.techwave-card-container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 1rem;
+}
+.grid-colspan-2{
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.grid-rowspan-2{
+    grid-column: span 1;
+    grid-row: span 1;
+}
+.grid-normal{
+    grid-column: span 1;
+    grid-row: span 1;
+} 
+.techwave-card{
+    padding: 1.5rem;
+    border-radius: 24px;
+}
+
+.featured-host{
+    padding: 2.5rem 2rem;
+    background-color: #1A0B2E;
+}
+.featured-heading{
+    font-size: 2rem;
+}
+.feaured-cards{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+.featued-description{
+    padding: 1rem;
+    gap: .5rem;
+    
+}
+.featured-card-heading{
+    font-size: 1.25rem;
+}
+
+.host-heading{
+    margin-top: 4.75rem;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+.host{
+    padding: 1.5rem;
+    
+    flex-direction: column;
+}
+.host-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.host-info{
+    align-items: center;
+    
+}
+.host-name{
+    font-size: 1.5rem;
+}
+.host-description{
+    text-align: center;
+    line-height: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
 
 
 

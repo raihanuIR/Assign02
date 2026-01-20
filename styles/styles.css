@@ -6,13 +6,14 @@
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
 }
+
+/* header design */
 /* header design */
 
 header{
     max-width: 1600px;
     margin: 0 auto;
 }
-
 .nav-bar{
     background-color: #1A0B2E ;
     padding: 0 200px;
@@ -33,7 +34,6 @@ header{
     list-style: none;
     margin: 2rem auto;
 }
-
 .btn-one{
     padding: 16px 12px;
     gap: 4px;
@@ -46,13 +46,13 @@ header{
 }
 
 /* Banner design */
+/* Banner design */
 
 main, .nav-bar{
     max-width: 1600px;
     /* width: 100%; */
     margin: 0 auto;
 }
-
 .banner{
     padding: 100px 525px;
     background-image: url(../assets/hero-bg.png);
@@ -63,7 +63,6 @@ main, .nav-bar{
     /* max-height: auto; */
     /* max-height:760px; */
 }
-
 .banner-container{
     max-width: 550px; 
     display: flex;
@@ -73,7 +72,25 @@ main, .nav-bar{
 }
 .banner-img{
     position: relative;
+    animation: breathe 2s ease-in-out infinite;
 }
+
+@keyframes breathe{
+
+0%{
+    transform: scale(1);
+}
+
+50%{
+    transform: scale(1.05);
+}
+
+100%{
+    transform: scale(1);
+}
+
+}
+
 .circle {
     max-width: 350px;
     max-height: 350px;
@@ -97,18 +114,15 @@ main, .nav-bar{
     position: absolute;
     top: 12px;
     right: 23px;
-    
 }
 .banner-description{
     margin-top: 40px;
 }
-
 .banner-heading{
     font-weight: 800;
     font-size: 3.75rem;
     color: #FFFFFF;
 }
-
 .banner-p{
     font-size: 1rem;
     font-weight: 400;
@@ -133,7 +147,6 @@ main, .nav-bar{
     display: flex;
     align-items: center;
 }
-
 .btn-three{
     padding: 12px 20px;
     gap: 8px;
@@ -149,7 +162,8 @@ main, .nav-bar{
     border: 1px solid #00FF88;
 }
 
-/* podcast section */
+/* podcast section design */
+/* podcast section design */
 
 .podcast{
     background-color: #1A0B2E;
@@ -157,18 +171,15 @@ main, .nav-bar{
     flex-direction: column;
     padding: 0 200px
 }
-
 .pordcast-description{
     margin-top: 50px;
 }
-
 .podcast-heading{
     font-size: 3rem;
     font-weight: 700;
     color:#FFFFFF;
     text-align: center;
 }
-
 .podcast-text{
     margin-top: 1rem;
     font-size: 1rem;
@@ -178,7 +189,6 @@ main, .nav-bar{
     color:#FFFFFF;
     text-align: center;
 }
-
 .card-podcast{
     margin-top: 10rem;
     margin-bottom: 7.5rem;
@@ -186,23 +196,30 @@ main, .nav-bar{
     grid-template-columns: repeat(4,1fr);
     gap:80px;
     justify-items: center;
+    align-items: first baseline;
 }
-
+.podcast-cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .podcast-cards h2{
     font-size: 3rem;
     font-weight: 900;
     color: #00FF88;
 }
-
 .podcast-cards p{
     margin-top: 1rem;
     font-size: 1rem;
     font-weight: 400;
     line-height: 20px;
     color: #FFFFFF;
+    text-align: center;
 }
 
-/* tech wave podcast */
+/* tech wave podcast design */
+/* tech wave podcast design */
+
 .techwave{
     padding: 7.5rem 12.5rem;
     background-color: #230E3D;
@@ -221,7 +238,6 @@ main, .nav-bar{
     gap:30px;
     /* align-items: center; */
 }
-
 .techwave-card{
     padding: 2.5rem;
     display: flex;
@@ -231,20 +247,17 @@ main, .nav-bar{
     background-color: rgba(53, 17, 101, 0.4);
     border-radius: 40px ;
 }
-
 .card-icon{
     width: 5rem;
     height: 5rem;
     /* margin-bottom: 16px; */
 }
-
 .techwave-card-head{
     text-align: left;
     font-size: 1.5rem;
     font-weight: 700;
     color: #FFFFFF;
 }
-
 .techwave-card-text{
     font-size: 1rem ;
     font-weight: 400;
@@ -253,7 +266,6 @@ main, .nav-bar{
     color: #FFFFFF;
     margin-top: 1rem;
 }
-
 .grid-colspan-2{
     grid-column: span 2;
     grid-row: span 1;
@@ -268,7 +280,8 @@ main, .nav-bar{
     grid-row: span 1;
 }
 
-/* featured episodes  */
+/* featured episodes design */
+/* featured episodes design */
 
 .featured-host{
     display: flex;
@@ -287,18 +300,20 @@ main, .nav-bar{
     font-weight: 700;
     color: #FFFFFF;
 }
-
 .feaured-cards{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 30px;
     margin-top: 2.5rem;
 }
-
 .featured-card{
     max-width: 380px;
     background-color: #250D44;
     border-radius: 1.5rem;
+    transition: transform 0.3s ease 0s ;
+}
+.featured-card:hover{
+    transform: translateY(-10px);
 }
 iframe{
     border-top-left-radius: 1.5rem;
@@ -333,13 +348,14 @@ iframe{
     font-weight: 600;
     color: #00FF88;
 }
-
 .featured-icon{
     width: 1.25rem;
     height: 1.25rem;
 }
 
-/* meet the host */
+/* meet the host design - challenge part */
+/* meet the host design - challenge part */
+/* meet the host design - challenge part */
 
 .host-heading{
     margin-top: 7.5rem;
@@ -355,7 +371,26 @@ iframe{
     gap: 1.5rem;
     align-items: center;
     border-radius: 2.5rem;
+    animation: breathe2 3s ease-in-out infinite;
 }
+@keyframes breathe2{
+
+0%{
+    transform: scale(1);
+}
+
+50%{
+    transform: scale(1.02);
+}
+
+100%{
+    transform: scale(1);
+}
+
+}
+/* .host:hover{
+    transform: translateY(-10px);
+} */
 .host-container{
     display: flex;
     flex-direction: column;
@@ -397,6 +432,7 @@ iframe{
     object-fit: contain;
 }
 
+/* footer design */
 /* footer design */
 
 footer{
@@ -453,11 +489,130 @@ footer{
 }
 
 
+
+
+
+/* responsive code styles */
+/* responsive code styles */
+/* responsive code styles */
+/* responsive code styles */
+/* responsive code styles */
 /* responsive code styles */
 
 
-@media screen and (max-width:576px){
+@media screen and (min-width: 576px) and (max-width: 992px){
 
+
+
+/* navbar medium design */
+
+.nav-bar{
+    background-color: #1A0B2E ;
+    padding: 0 40px;
+}
+
+/* banner medium design */
+
+.banner{
+    padding: 60px 20px ;
+}
+.banner-container{
+    margin: 0 auto;
+    max-width: 450px; 
+}
+
+/* podcast medium design */
+
+.podcast{
+    padding: 0 120px;
+    margin: 0 auto;
+}
+
+/* techwave medium design */
+
+.techwave{
+    padding: 4rem 5rem;
+}
+.techwave-card-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+}
+.grid-colspan-2, .grid-rowspan-2, .grid-normal{
+    grid-column: span 1;
+    grid-row: span 1;
+}
+.grid-colsapn-2-medium{
+    grid-column: span 2;
+    grid-row: span 1 ;
+}
+.grid-rowspan-2-medium{
+    grid-column: span 1;
+    grid-row: span 2;
+}
+.grid-normal-medium{
+    grid-column: span 1;
+    grid-row: span 1;
+} 
+.techwave-card{
+    padding: 1.5rem;
+    border-radius: 24px;
+}
+
+/* featured host medium design */
+
+.featured-host{
+    padding: 2.5rem 3rem;
+    background-color: #1A0B2E;
+}
+.featured-heading{
+    font-size: 2rem;
+}
+.feaured-cards{
+    gap: 1.5rem;
+}
+.featued-description{
+    padding: 1rem;
+    gap: 1rem;
+}
+.featured-card-heading{
+    font-size: 1.2rem;
+}
+
+/* footer medium design */
+
+.ff{
+    padding: 75px 20px 20px;
+}
+.footer-container{
+    gap: 1.5rem;
+}
+.footer-img{
+    width: 300px;
+    height: 45px;
+}
+.footer-links{
+    gap: 1rem;
+    width: 400px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.copyright{
+    margin-top: 1.5rem;
+    line-height: 1.5rem;
+}
+
+}
+
+
+
+
+
+@media screen and (max-width: 576px){
+
+
+
+/* navbar small design */
 
 nav{
     display: none;
@@ -478,6 +633,8 @@ nav{
     width: 18px;
     height: 14px;
 }
+
+/* banner small design */
 
 .banner{
     padding: 60px 20px ;
@@ -512,17 +669,18 @@ nav{
 .pordcast-description{
     margin-top: 40px;
 }
+
+/* podcast small design */
+
 .podcast{
     padding: 0 20px;
 }
-
 .podcast-heading{
     font-size: 2rem;
 }
 .podcast-text{
     line-height: auto;
 }
-
 .card-podcast{
     margin-top: 5rem;
     margin-bottom: 7.5rem;
@@ -533,6 +691,9 @@ nav{
 .podcast-cards h2{
     font-size: 2.5rem;
 }
+
+/* techwave small design */
+
 .techwave{
     padding: 2.5rem 1.25rem;
 }
@@ -559,6 +720,8 @@ nav{
     border-radius: 24px;
 }
 
+/* featured host small design */
+
 .featured-host{
     padding: 2.5rem 2rem;
     background-color: #1A0B2E;
@@ -575,12 +738,10 @@ nav{
 .featued-description{
     padding: 1rem;
     gap: .5rem;
-    
 }
 .featured-card-heading{
     font-size: 1.25rem;
 }
-
 .host-heading{
     margin-top: 4.75rem;
     margin-bottom: 1.5rem;
@@ -588,7 +749,6 @@ nav{
 }
 .host{
     padding: 1.5rem;
-    
     flex-direction: column;
 }
 .host-container{
@@ -598,7 +758,6 @@ nav{
 }
 .host-info{
     align-items: center;
-    
 }
 .host-name{
     font-size: 1.5rem;
@@ -610,10 +769,11 @@ nav{
     margin-bottom: 1rem;
 }
 
+/* footer small design */
+
 .ff{
     padding: 40px 20px;
 }
-
 .footer-container{
     gap: 1.5rem;
 }
@@ -627,16 +787,11 @@ nav{
     flex-wrap: wrap;
     justify-content: center;
 }
-
 .copyright{
     line-height: 1.5rem;
 }
 
 }
-
-
-
-
 
 
 

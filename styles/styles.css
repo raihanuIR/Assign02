@@ -54,7 +54,7 @@ main, .nav-bar{
     margin: 0 auto;
 }
 .banner{
-    padding: 100px 525px;
+    padding: 100px 500px;
     background-image: url(../assets/hero-bg.png);
     background-size:cover;
     background-repeat: no-repeat;

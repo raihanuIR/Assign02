@@ -507,9 +507,22 @@ footer{
 
 /* navbar medium design */
 
+nav{
+    display: none;
+}
+.btn-one{
+    display: none;
+}
+.hamburger{
+    display: block;
+}
+.hamburger img{
+    width: 18px;
+    height: 14px;
+}
 .nav-bar{
     background-color: #1A0B2E ;
-    padding: 0 40px;
+    padding: 20px 40px;
 }
 
 /* banner medium design */
